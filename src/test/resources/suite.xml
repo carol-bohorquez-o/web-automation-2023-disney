@@ -5,13 +5,9 @@
 		<listener class-name="com.globant.web.listeners.Listener"></listener>
 	</listeners>
 	<test name="example run">
-		<groups>
-			<run>
-				<include name="group1"></include>
-			</run>
-		</groups>
 		<classes>
-			<class name="com.globant.web.tests.Example">
+			<class name="com.globant.web.tests.EmbedTest">
+				<parameter name="url" value="https://mdbootstrap.com/docs/standard/utilities/embeds/"></parameter>
 				<methods>
 					<exclude name="goodbye"></exclude>
 				</methods>
